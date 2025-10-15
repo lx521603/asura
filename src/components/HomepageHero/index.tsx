@@ -80,8 +80,8 @@ export default function HomepageHero() {
         </a>
       </div> */}
       <div className="relative z-1 pb-10 md:pb-[100px]">
-      {/*  <Section
-          title="技术栈"
+        <Section
+          title="Tech Stack"
           titleProps={{
             disabledAnimation: false,
           }}
@@ -108,9 +108,9 @@ export default function HomepageHero() {
               <StackItem className="icon-[line-md--iconify1]" />
             </Marquee>
           </div>
-        </Section>*/}
+        </Section>
         <Section
-          title="精选产品"
+          title="Features"
           description={t('featuresDesc')}
         >
           <div className="flex justify-center w-full max-w-7xl">

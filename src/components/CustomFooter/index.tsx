@@ -57,7 +57,7 @@ export function CustomFooter() {
             { new Date().getFullYear() }
           </span>
           <UnderlineLink
-            link="https://Asura.ims"
+            link="https://Asura.im"
             label={(
               <>
                 <span className="animate-[heartbeat_1.5s_infinite] mr-[3px]">❤️</span>
