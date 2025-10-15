@@ -15,11 +15,11 @@ import ThemeToggle from '@/widgets/theme-toggle'
 import { getDictionary, getDirection } from '../_dictionaries/get-dictionary'
 import { ThemeProvider } from './_components/ThemeProvider'
 import './styles/index.css'
-
+import './styles/overrides.css'
 export const metadata = {
   // Define your metadata here
   // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
-  metadataBase: new URL('https://velvify.com'),
+  metadataBase: new URL('https://Asura.im'),
   icons: '/img/favicon.svg',
 } satisfies Metadata
 

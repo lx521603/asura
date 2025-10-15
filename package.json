@@ -1,9 +1,9 @@
 {
-  "name": "薇薇的美妆站",
+  "name": "Asura",
   "type": "module",
   "version": "0.0.1",
   "description": "Next.js Nextra (v4) Tailwind CSS (v4) docs starter",
-  "author": "薇薇 <x@glee.ch>",
+  "author": "Asura <x@glee.ch>",
   "license": "MIT",
   "homepage": "https://github.com/pdsuwwz/nextjs-nextra-starter#readme",
   "repository": {
@@ -37,6 +37,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.22",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.544.0",
     "motion": "^12.23.22",
     "next": "15.5.4",

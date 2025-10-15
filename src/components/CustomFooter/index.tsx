@@ -57,12 +57,12 @@ export function CustomFooter() {
             { new Date().getFullYear() }
           </span>
           <UnderlineLink
-            link="https://velvify.com"
+            link="https://Asura.ims"
             label={(
               <>
                 <span className="animate-[heartbeat_1.5s_infinite] mr-[3px]">❤️</span>
                 {' '}
-                薇薇的美妆小站
+                Asura
               </>
             )}
           />

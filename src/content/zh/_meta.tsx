@@ -1,5 +1,6 @@
 import type { MetaRecord } from 'nextra'
 import { TitleBadge } from '@/components/TitleBadge'
+import TagsPage from '@/app/[lang]/tags/page'
 
 export default {
   index: {
@@ -31,4 +32,9 @@ export default {
     ),
     type: 'page',
   },
+  tags: {
+    "title": "标签",
+    "type": "page",
+    "href": "/tags"
+  }
 } satisfies MetaRecord

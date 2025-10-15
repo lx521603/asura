@@ -1,7 +1,7 @@
 export default {
-  systemTitle: '🚀 薇薇的美妆小站',
+  systemTitle: '🚀 Asura',
   banner: {
-    title: '👋 嘿，欢迎来到薇薇的美妆小站!velvify.com',
+    title: '👋 嘿，欢迎来到Asura.im',
     more: '了解详情',
   },
   pageTitle: '当前页面',
@@ -14,8 +14,8 @@ export default {
     loading: '加载中...',
   },
 
-  badgeTitle: '薇薇的推荐！ 🎉',
-  featureSupport: `🔥 新品上市！！！`,
+  badgeTitle: '待编辑！ 🎉',
+  featureSupport: `🔥 待编辑！！！`,
   lastUpdated: '最后更新于:',
 
   getStarted: '开始使用',

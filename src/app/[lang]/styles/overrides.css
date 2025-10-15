@@ -3,6 +3,12 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
+
+/* 方法D：最暴力的方式 */
+body .nextra-body {
+  padding-top: 2rem !important;
+}
+
 a,
 summary,
 button,
