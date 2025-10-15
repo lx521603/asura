@@ -1,13 +1,7 @@
 // src/lib/posts.ts
 import { getPageMap } from 'nextra/page-map'
 
-export async function getAllContent(lang: string) {
-  try {
-    const pageMap = await getPageMap(lang)
-    console.log('=== 详细调试信息 ===')
-    
-    const allContent: any[] = []
-    interface PageItem {
+interface PageItem {
   name?: string
   route?: string
   frontMatter?: {
@@ -16,8 +10,23 @@ export async function getAllContent(lang: string) {
     date?: string
   }
   children?: PageItem[]
+  title?: string | React.ReactNode
+  kind?: string
 }
-    const allTags = []
+
+interface ContentItem {
+  slug: string
+  title: string
+  tags: string[]
+}
+
+export async function getAllContent(lang: string) {
+  try {
+    const pageMap = await getPageMap(lang)
+    console.log('=== 详细调试信息 ===')
+    
+    const allContent: ContentItem[] = []
+    const allTags: string[] = []
     
     // 深度遍历 pageMap
     function traverse(node: any, path: string = '') {
@@ -41,7 +50,7 @@ export async function getAllContent(lang: string) {
           title = node.frontMatter.title
         }
         
-        const content = {
+        const content: ContentItem = {
           slug: node.route || path,
           title: title,
           tags: node.frontMatter.tags || []
