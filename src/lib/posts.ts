@@ -6,7 +6,17 @@ export async function getAllContent(lang: string) {
     const pageMap = await getPageMap(lang)
     console.log('=== 详细调试信息 ===')
     
-    const allContent = []
+    const allContent: any[] = []
+    interface PageItem {
+  name?: string
+  route?: string
+  frontMatter?: {
+    title?: string
+    tags?: string[]
+    date?: string
+  }
+  children?: PageItem[]
+}
     const allTags = []
     
     // 深度遍历 pageMap
