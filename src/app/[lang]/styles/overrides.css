@@ -1,12 +1,41 @@
+/* src/app/[lang]/styles/overrides.css */
+
+/* 删除或注释掉有问题的 Tailwind 类 */
+.button-switch {
+  /* @apply max-md:hidden; */  /* 删除这行 */
+  display: none; /* 或者用普通 CSS 替代 */
+}
+
+@media (max-width: 768px) {
+  .button-switch {
+    display: none;
+  }
+}
+
+.button-switch svg {
+  /* @apply size-[14px]; */  /* 删除这行 */
+  width: 14px;
+  height: 14px;
+}
+
+/* 添加间距样式 */
+.nextra-body {
+  padding-top: 2rem !important;
+}
+
+.nextra-content {
+  padding-top: 2rem !important;
+}
+
+main > div {
+  padding-top: 2rem !important;
+}
+
+/* 你原有的其他样式 */
 body {
   font-family: 'sans-serif', 'Arial', 'Microsoft Yahei';
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
-}
-
-/* 方法D：最暴力的方式 */
-body .nextra-body {
-  padding-top: 2rem !important;
 }
 
 a,
@@ -16,12 +45,5 @@ input,
 [tabindex]:not([tabindex='-1']) {
   &:focus-visible {
     box-shadow: none;
-  }
-}
-
-.button-switch {
-  @apply max-md:hidden;
-  svg {
-    @apply size-[14px];
   }
 }
